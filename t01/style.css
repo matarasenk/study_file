@@ -1,0 +1,57 @@
+table {
+    width: 100%;
+    background: black;
+    color: black;
+    border-collapse: collapse;
+    padding: 20px;
+    border: 1px solid grey;
+    
+}
+
+thead {
+    width: 100%;
+    border: 1px black;
+}
+
+th {
+    color: white;
+    border: none;
+}
+
+th, td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Soul {
+      background: orange;
+  }
+
+  .Time {
+      background: green;
+  }
+
+  .Space {
+      background: blue;
+  }
+
+  .Mind {
+      background: yellow;
+  }
+
+  .Reality {
+      background: red;
+  }
+
+  .Power {
+      background: purple;
+  }
+
+  img {
+      width: 120px; height: 120px;
+      border-radius: 25px;
+  }
+  .text {
+      text-align: center;
+  }
