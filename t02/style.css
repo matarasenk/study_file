@@ -1,0 +1,33 @@
+[type="search"] 
+{
+    width: 500px; height: 25px;
+    border-color: blue;
+    color: green;
+    border-radius: 5px;
+    text-indent: 10px;
+    text-size-adjust: 2em;
+    
+}
+
+[value="FIND"] 
+{
+    color: green;
+    height: 25px;
+}
+
+[type="submit"]
+{
+    margin-left: -4px;
+}
+
+[type="submit"]:hover
+{
+    color: red;
+}
+
+[type="search"]:hover
+{
+    color: red;
+}
+
+

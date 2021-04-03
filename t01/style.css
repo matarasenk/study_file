@@ -4,7 +4,6 @@ table {
     color: black;
     border-collapse: collapse;
     padding: 20px;
-    border: 1px solid grey;
     
 }
 
@@ -16,12 +15,15 @@ thead {
 th {
     color: white;
     border: none;
+    padding: 5px;
+    
 }
 
-th, td {
+td {
     border: 1px solid white;
     text-align: center;
     padding: 10px;
+    
   }
 
   .Soul {
