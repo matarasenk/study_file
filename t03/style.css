@@ -1,0 +1,77 @@
+
+
+.card 
+{
+    display: inline-block;
+    position: relative;
+    height: 140px; 
+    width: 270px; border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 25px;
+    background: linear-gradient(#4568DC,#B06AB3);
+}
+
+.image
+{
+    height: 182px;
+    transform: scale(0.9px);
+    margin-top: -42px;
+    position: relative;
+    float: left;
+}
+
+.inside
+{
+    position: absolute;
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 55px;
+    text-align: right;
+}
+
+.name_1
+{
+    
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.name_2
+{
+    margin-top: 15px;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+p 
+{
+    line-height: 0.9px;
+}
+
+#Iron-Man
+{
+    background: linear-gradient(#e52d27, #b31217);
+    margin-top: 50px;
+}
+
+#Black-Widow
+{
+    background: linear-gradient(#000, #61045F);
+    margin-top: 50px;
+}
+
+#Spider-Man
+{
+    background: linear-gradient(#e52d27, #000);
+    margin-top: 50px;
+}
+
+#Spider-img
+{
+    margin-top: 0px;
+}
+
+#line_block { 
+    float:left; 
+    }
