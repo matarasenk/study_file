@@ -1,11 +1,10 @@
-
-
 .card 
 {
     display: inline-block;
     position: relative;
     height: 140px; 
-    width: 270px; border-radius: 5px;
+    width: 270px; 
+    border-radius: 5px;
     margin-top: 50px;
     margin-left: 25px;
     background: linear-gradient(#4568DC,#B06AB3);
@@ -71,7 +70,3 @@ p
 {
     margin-top: 0px;
 }
-
-#line_block { 
-    float:left; 
-    }

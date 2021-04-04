@@ -1,0 +1,16 @@
+h1
+{
+    text-align: center;
+    background: red;
+}
+
+span
+{
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    height: 0.9em;
+    color: white;
+}
