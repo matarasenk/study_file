@@ -1,0 +1,42 @@
+.all {
+    display: inline-flex;
+    height: auto;
+    width: 800px;
+}
+
+.card {
+    height: 175px;
+    width: 100px;
+    margin: auto
+}
+
+.card:hover {
+    box-shadow: 0 0 7px black;
+}
+
+.date {
+    text-align: center;
+    font-size: 1.5em;
+    background: cornflowerblue;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.img {
+    margin: auto;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.temperature {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
