@@ -1,13 +1,16 @@
 .all {
-    display: inline-flex;
+    /* display: inline-block; */ /* это не надо */
     height: auto;
-    width: 800px;
+    width: 100%;
+    
 }
 
 .card {
-    height: 175px;
-    width: 100px;
-    margin: auto
+    height: 200px;
+    width: 110px;
+    margin: auto;
+    display: inline-block;
+    position: relative;
 }
 
 .card:hover {
@@ -17,7 +20,7 @@
 .date {
     text-align: center;
     font-size: 1.5em;
-    background: cornflowerblue;
+    background: steelblue;
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -32,6 +35,9 @@ img {
     margin-right: auto;
     width: 100px;
     height: 100px;
+    position: absolute;
+    
+
 }
 
 .temperature {
@@ -39,4 +45,7 @@ img {
     font-size: 2em;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 20px;
 }
