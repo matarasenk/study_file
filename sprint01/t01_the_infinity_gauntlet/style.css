@@ -1,0 +1,22 @@
+
+.man 
+{
+    height: 100px;
+    
+}
+
+.arm
+{
+    height: 400px;
+    margin: 20px;
+}
+
+.arm:hover + table tr:nth-child(2n + 1) td:nth-child(2n + 1)
+{
+    visibility: collapse;
+}
+
+.arm:hover + table tr:nth-child(2n) td:nth-child(2n)
+{
+    visibility: collapse;
+}

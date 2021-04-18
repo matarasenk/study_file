@@ -1,0 +1,58 @@
+html {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  'header header header'
+  'middle middle middle';
+  background-color: rgb(253, 209, 63);
+  padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    font-size: 30px;
+}
+
+.middle {
+  grid-area: middle;
+  text-align: center;
+  margin-top: -40px;
+  font-size: 1em;
+  padding: 0px;
+}
+
+.grid-item {
+  background-color: rgb(228, 228, 228);
+  height: auto;
+  margin: 5px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.test{
+  height: 25px;
+  width: 50px;
+  background-color: rgb(189, 189, 189);
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+.test:hover {
+  background-color: #fff;
+}
+
+.css-content {
+  grid-column-start: 2;
+  text-align: center;
+  font-size: 1em;
+}
+
+#first {
+  grid-column-start: 1;
+}

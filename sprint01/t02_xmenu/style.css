@@ -1,0 +1,109 @@
+h1
+{
+    text-align: center;
+    background: black;
+    width: 100%;
+    margin-top: 10px;
+}
+
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to top, #a5a5a5, #fcfcfc);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+.wrapper {
+    height: 100%;
+    padding: 30px 0px 0px 20px;
+}
+
+.menu {
+    margin-top: 20px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu li {
+    list-style: none;
+    position: relative;
+}
+
+.menu_list {
+    display: flex;
+    
+}
+
+.menu_list > li {
+    margin: 0px 10px 0px 0px;
+    border: 0px solid #ccc;
+    background-color: rgb(129, 129, 129);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.menu_list > li:hover .sub-menu_list {
+    display: block;
+}
+
+.menu_link {
+    color: white;
+}
+
+.sub-menu_list {
+    position: absolute;
+    display: none;
+    min-width: 300px;
+    left: 0px;
+    top: 49px;
+    padding: 20px 0px 0px 0px;
+}
+
+.sub-menu_list > li {
+    background-color: rgb(165, 165, 165);
+} 
+
+.sub-menu_list > li:hover .sub-sub-menu_list {
+    display: block;
+}
+
+.sub-menu_link {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.sub-sub-menu_list {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+}
+
+.sub-sub-menu_list > li {
+    background-color: rgb(185, 185, 185);
+}
+
+.sub-sub-menu_link {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+li:hover {
+    background: rgb(0, 0, 0);
+}
