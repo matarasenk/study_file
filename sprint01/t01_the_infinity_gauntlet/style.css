@@ -1,22 +1,17 @@
-
-.man 
-{
-    height: 100px;
+.man {
+    height: 50px;
     
 }
 
-.arm
-{
-    height: 400px;
+.arm {
+    height: 200px;
     margin: 20px;
 }
 
-.arm:hover + table tr:nth-child(2n + 1) td:nth-child(2n + 1)
-{
+.arm:hover + table tr:nth-child(2n + 1) td:nth-child(2n + 1) {
     visibility: collapse;
 }
 
-.arm:hover + table tr:nth-child(2n) td:nth-child(2n)
-{
+.arm:hover + table tr:nth-child(2n) td:nth-child(2n) {
     visibility: collapse;
 }
