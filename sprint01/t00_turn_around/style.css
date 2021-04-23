@@ -5,6 +5,5 @@ body
 }
 
 .image:hover {
-    transform: rotate(-30deg);
-    transition: all 0.7s ease-in-out; 
+    transform: rotate(-30deg); 
 }

@@ -1,58 +1,68 @@
-html {
-  width: 100%;
-}
+body {
+    background-color: rgb(253, 209, 63);
+  }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  'header header header'
-  'middle middle middle';
-  background-color: rgb(253, 209, 63);
-  padding: 10px;
-}
-
-.header {
-    grid-area: header;
+h1, h2 {
     text-align: center;
-    font-size: 30px;
+  }
+  h1.example {
+      text-align: left;
+  }
+  .subtopic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: calc(2vw);
+  }
+  
+.topic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: calc(2vw);
 }
 
-.middle {
-  grid-area: middle;
-  text-align: center;
-  margin-top: -40px;
-  font-size: 1em;
-  padding: 0px;
-}
+  .elements {
+    background-color: rgb(228, 228, 228);
+    padding: 5px;
+  }
+  .background {
+      background: red;
+  }
+  .border {
+      border: 2px solid red;
+  }
+  .color {
+      color: purple;
+  }
+  .cursor {
+      cursor: pointer;
+  }
+  
 
-.grid-item {
-  background-color: rgb(228, 228, 228);
-  height: auto;
-  margin: 5px;
-  padding: 20px;
-  font-size: 12px;
-}
-
-.test{
-  height: 25px;
-  width: 50px;
-  background-color: rgb(189, 189, 189);
-  border-radius: 5px;
-  border: 1px solid black;
-  font-size: 10px;
-}
-
-.test:hover {
-  background-color: #fff;
-}
-
-.css-content {
-  grid-column-start: 2;
-  text-align: center;
-  font-size: 1em;
-}
-
-#first {
-  grid-column-start: 1;
-}
+  
+  @media screen and (min-width: 1024px) {
+    .subtopic {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .topic {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .subtopic {
+      grid-template-columns: 1fr 1fr;
+    }
+    .topic {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .subtopic {
+      grid-template-columns: 1fr;
+    }
+    .topic {
+      grid-template-columns: 1fr;
+    }
+  }

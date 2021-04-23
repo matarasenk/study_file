@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+input {
+    width: 95%; 
+    height: 25px;
+    color: #52813a;
+    flex-grow: 2;
+    height: 3em;
+}
+
+input::placeholder {
+    color: green;
+}
+
+button {
+    color: #8a8a8a;
+    height: 2.5em;
+    margin-top: 0.2em;
+    box-shadow: 0.1em 0.1em 5px rgba(122,122,122,0.5);
+}
+
+input:hover, button:hover {
+    color: red;
+}

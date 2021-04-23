@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Handbook</title>
+    <meta name="description" content="t03. Handbook">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title_text">Handbook</h1>
+    <p class="title_text">HTML</p>
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <p><b>h1</b></p>
+            <p>The h1 to h6 tags are used to define HTML headings</p><br></h2>
+            <p><span>&lt;h1&gt;Title&lt;/h1&gt;</span></p><br>
+            <h1>Title</h1>
+        </div>
+        <div class="grid-item">
+            <p><b>table</b></p>
+            <p>defines an HTML table</p><br></h2>
+            <p><span>&lt;table&gt;&lt;/table&gt;</span></p><br><br>
+            <table>
+                <tr>
+                    <td>Country</td>
+                    <td>Country</td>
+                    <td>Country</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-item">
+            <p><b>hr</b></p>
+            <p>draws a horizontal line</p><br>
+            <span>&lt;hr&gt;</span><br>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetuer cursus pede pellentesque
+                vitae pretium.</p>
+            <hr>
+        </div>
+        <div class="grid-item">
+            <p><b>input</b></p>
+            <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p><br></h2>
+            <span>&lt;input attributes&gt;</span><br>
+            <p><strong>Your name</strong><br>
+                <input name="name">
+            </p>
+            <p><b>Question</b></p>
+            <input type="radio" value="1">
+            <label for="1">answer</label><br>
+            <input type="radio" value="1">
+            <label for="1">answer</label><br>
+            <input type="radio" value="1">
+            <label for="1">answer</label><br>
+        </div>
+        <div class="grid-item">
+            <p><b>button</b></p>
+            <p>Clickable button</p><br>
+            <span>&lt;button&gt;Button&lt;/button&gt;</span><br><br>
+            <button type="button" class="test">Button</button>
+        </div><br>
+
+        <p class="title_text">CSS</p>
+        <div id="first" class="grid-item">
+            <p><b>background</b></p>
+            <p>specifies the background of an element</p></br>
+            <p>background: []</p>
+            <p id="text-back">Text</p>
+        </div>
+        <div class="grid-item">
+            <p><b>opacity</b></p>
+            <p>specifies the opacity/transparency of an element</p><br>
+            <p>opacity: 0.8;</p>
+            <div>
+                <div class="opacity-color">
+                    <div class="opacity-color" id="first"></div>
+                    <div class="opacity-color" id="second"></div>
+                    <div class="opacity-color" id="third"></div>
+                    <div class="opacity-color" id="def"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <p><b>line-height</b></p>
+            <p>specifies the height of a line</p><br>
+            <p>line-height: 1.5;</p>
+            <div id="text-line-height">
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum dolor.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <p><b>text-transform</b></p>
+            <p>controls the capitalization of text</p><br>
+            <p>text-transform: uppercase;</p>
+            <p> <span id="tt">lorem i</span>psum dolor sit <span id="tt">amet, consectetuer</span> adipisicing elit.
+                <span id="tt">vitae, dolore.</span>
+            </p>
+        </div>
+        <div class="grid-item">
+            <p><b>border</b></p>
+            <p>specifies the style of the outline</p><br>
+            <p>border-bottom: 2px solid #666;</p>
+            <div id="square"></div>
+        </div>
+        <div class="grid-item">
+            <p><b>font-size</b></p>
+            <p>specifies the font size of the item.
+                %, px, rem, inherit</p><br>
+            <p>font-size: 62px;</p>
+            <p id="font"> Lorem ipsum dolor sit amet, consectetuer adipisicing elit. Ratione, esse.</p>
+        </div>
+
+        <p class="title_text">PROTOCOLS</p>
+        <div>
+            <div id="second" class="grid-item">
+                <p><b>HTTP methods</b></p>
+                <p>GET is used to request data from a specified resource representation/information only - and not to to
+                    modify it in any way</p>
+                <p>POST is used to send data to a server to create/update a resource.</p>
+                <p>PUT is used to send data to a server to create/update a resource. The difference between POST and PUT
+                    is
+                    that PUT requests are idempotent. That is, calling the same PUT request multiple times will always
+                    produce the same result. In contrast, calling a POST request repeatedly have side effects of
+                    creating
+                    the same resource multiple times.</p>
+                <p>The DELETE method deletes the specified resource.</p>
+                <p>PATCH - HTTP PATCH requests are to make partial update on a resource</p>
+            </div>
+            <div class="grid-item">
+                <p><b>HTTP status code</b></p>
+                <p>1xх: Informational example: 100 Continue</p>
+                <p>2хx: Success example: 201 Created</p>
+                <p>Зхх: Redirection example: 301 Moved Permanently</p>
+                <p>4xx: Client Error example: 404 Not Found</p>
+                <p>5x: Server Error example: 500 Internal Server Error</p>
+            </div>
+        </div>
+</body>
+
+</html>
