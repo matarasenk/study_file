@@ -2,31 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Settings</title>
-    <meta name="description" content="t05. Settings">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <meta name="description" content="t05. Settings">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Settings</h1>
-    <div class="form">
-        <div class="main">
-            <div class="select">
-                <p>Typeface</p>
-                <select name="typeface" id="typeface">
-                    <option value="t1">Acunim Pro</option>
-                    <option value="t2">Comic Sans</option>
-                    <option value="t3" disabled>Times New Roman</option>
-                </select>
-            </div>
-            <div class="switch">
-                <p>Dark UI</p>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </div>
+  <div class="main">
+
+    <div class="header">
+      <h1>Settings</h1>
     </div>
+
+    <div class="back">
+      <div class="content">
+        <div class="typeface">
+          <span>Typeface</span>
+        </div>
+        <div class="toggle-select flex-wrapper">
+          <div class="select width-wrapper">
+            <select name="typeface">
+              <option value="t1">Acunim Pro</option>
+              <option value="t2">Comic Sans</option>
+              <option value="t3" disabled>Times New Roman</option>
+            </select>
+          </div>
+          <div class="toggle width-wrapper flex-wrapper">
+            <span>Dark UI</span>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="text-decorate-title flex-wrapper">
+          <div class="width-wrapper">
+            <span>Weight</span>
+          </div>
+          <div class="width-wrapper">
+            <span>Color</span>
+          </div>
+        </div>
+        <div class="text-decorate-content flex-wrapper">
+          <div class="width-wrapper pick-weight">
+            <div>
+              <label for="Regular">
+                <input type="checkbox" id="Regular" class="font">
+                <span id="custom_one" class="custom_font"></span>
+              </label>
+              <span>Regular</span>
+            </div>
+            <div>
+              <label for="Bold" id="bold">
+                <input type="checkbox" id="Bold" class="font">
+                <span id="custom_two" class="custom_font"></span>
+              </label>
+              <span>Bold</span>
+            </div>
+          </div>
+          <div class="color-select width-wrapper flex-wrapper">
+            <label for="box1">
+              <input type="checkbox" class="colors" id="box1">
+              <span class="custom_colors" id="blue_sp"></span>
+            </label>
+            <label for="box2">
+              <input type="checkbox" class="colors" id="box2">
+              <span class="custom_colors" id="green_sp"></span>
+            </label>
+            <label for="box3">
+              <input type="checkbox" class="colors" id="box3">
+              <span class="custom_colors" id="purpule_sp"></span>
+            </label>
+            <label for="box4">
+              <input type="checkbox" class="colors" id="box4">
+              <span class="custom_colors" id="yellow_sp"></span>
+            </label>
+            <label for="box5">
+              <input type="checkbox" class="colors" id="box5">
+              <span class="custom_colors" id="orange_sp"></span>
+            </label>
+          </div>
+        </div>
+        <div class="flex-wrapper size-tittle">
+          <span>Size</span>
+        </div>
+        <div class="flex-wrapper">
+          <div class="width-wrapper select-size">
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slide">
+              <p class="small">A</p>
+              <p class="big">A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <img src="assets/images/artistic-brush.png" alt="">
+        <img src="assets/images/user-icon.png" alt="">
+        <img src="assets/images/sms-speech-bubble.png" alt="">
+        <img src="assets/images/computer-screen.png" alt="">
+      </div>
+    </div>
+  </div>
 </body>
