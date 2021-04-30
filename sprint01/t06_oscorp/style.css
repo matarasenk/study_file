@@ -1,7 +1,238 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .header {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
+    flex-direction: row;
     width: 100%;
     height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.logo>img {
+    transform: scale(0.6);
+    height: 100%;
+}
+
+.text-header {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    padding: 5px;
+}
+
+.text-header>span {
+    height: max-content;
+}
+
+.topnav {
+    width: 20%;
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 16px;
+    font-size: 17px;
+}
+
+.submenu {
+    display: flex;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+    width: 100%;
+    height: 30px;
+}
+
+/* Стиль списка */
+
+ul.breadcrumb {
+    padding: 4px 16px;
+    list-style: none;
+}
+
+/* Отображение элементов списка бок о бок */
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.text-catalog {
+    border: 1px solid purple;
+}
+
+.text-catalog>h2 {
+    width: max-content;
+}
+
+.catalog {
+    margin-left: 60px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.label-nav {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-left: 60px;
+    border-radius: 100px;
+    background: rgb(59, 59, 59);
+    border: 1px solid slategrey;
+}
+
+.filterColor>.inputs {
+    display: none;
+}
+
+.nav-bar {
+    /* border: 1px solid red; */
+    height: 20%;
+    width: 20%;
+}
+
+.nav-navbar {
+    /* border: 1px solid blue; */
+    height: 300px;
+}
+
+.slidecontainer {
+    position: relative;
+}
+
+.slide {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 2px;
+    border-radius: 5px;
+    background: #2a2f35;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-left: 20px;
+}
+
+.slide:hover {
+    opacity: 1;
+}
+
+.slide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: turquoise;
+    cursor: pointer;
+}
+
+.slide::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.select-size {
+    position: relative;
+    height: 50px;
+}
+
+.slidecontainer {
+    position: relative;
+}
+
+.slidecontainer>p {
+    top: 10px;
+    position: absolute;
+    color: black;
+}
+
+.small {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.big {
+    position: absolute;
+    left: 190px;
+    font-size: 1.5em;
+}
+
+.main {
+    display: flex;
+    border: 2px solid palevioletred;
+    width: 100%;
+}
+
+.wall {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    border: 1px solid blue;
+    width: 80%;
+}
+
+.images-wands {
+    width: 100px;
+    height: 100px;
+}
+
+.grid-one {
+    display: grid;
+    grid-column-start: 1;
+}
+
+.grid-second {
+    display: grid;
+    grid-column-start: 2;
 }

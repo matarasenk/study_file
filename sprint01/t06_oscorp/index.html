@@ -9,17 +9,81 @@
 </head>
 
 <body>
-  <div class="header">
-    <div class="logo"><img src="" alt=""></div>
-    <span>About</span>
-    <span>Service</span>
-    <span>Contact</span>
-    <div class="search-line">
-      <form>
-        <p><input type="search" name="q" placeholder="SEARCH">
-          <input type="submit" value="Search">
-        </p>
-      </form>
+  <div class="content">
+    <div class="header">
+      <div class="logo">
+        <img src="assets/images/ollivanders-logo.png">
+      </div>
+      <div class="text-header">
+        <span>About</span>
+        <span>Service</span>
+        <span>Contact</span>
+      </div>
+      <div class="topnav">
+        <input class="search" type="text" placeholder="Search..">
+      </div>
+    </div>
+    <div class="submenu">
+      <div class="nav-breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Catalog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-catalog">
+      <h2 class="catalog">Catalog</h2>
+    </div>
+    <div class="filter">
+      <div class="filterColor">
+        <input type="checkbox" name="1" value="Black" id="checkbox-id1" class="inputs" />
+        <label class="label-nav" for="checkbox-id1">Black</label>
+        <input type="checkbox" name="2" value="Yellow" id="checkbox-id2" class="inputs" />
+        <label class="label-nav" for="checkbox-id2">Yellow</label>
+        <input type="checkbox" name="3" value="White" id="checkbox-id3" class="inputs" />
+        <label class="label-nav" for="checkbox-id3">White</label>
+      </div>
+    </div>
+    <div class="main">
+      <div class="nav-bar">
+        <div class="nav-navbar">
+          <form class="choose">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Acacia</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Cedar</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">Dragon heartstring</label>
+          </form>
+        </div>
+        <div class="price">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slide">
+            <p class="small">0</p>
+            <p class="big">2000</p>
+          </div>
+        </div>
+      </div>
+      <div class="wall">
+        <div class="images-wands">
+          <div class="grid-one">
+            <img src="assets/images/01.jpg" alt="Walnut">
+            <h3>Walnut - Dragon heartstring</h3>
+            <p><button class="but" disabled>BUY</button></p>
+            <img src="assets/images/02.png" alt="Blackthorn">
+            <h3>Blackthorn - Troll whisker</h3>
+            <p><button class="but" disabled>BUY</button></p>
+          </div>
+          <div class="grid-second">
+            <img src="assets/images/03.jpg" alt="Birch">
+            <h3>Birch - Dragon heartstring</h3>
+            <p><button class="but" disabled>BUY</button></p>
+            <img src="assets/images/04.jpg" alt="Holly">
+            <h3>Holly - Phoenix feather</h3>
+            <p><button class="but" disabled>BUY</button></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
