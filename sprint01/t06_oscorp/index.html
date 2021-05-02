@@ -2,104 +2,106 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Ollivanders shop</title>
-  <meta name="description" content="t06. Ollivanders shop">
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ollivanders shop</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/images/ollivanders-logo.png">
 </head>
 
 <body>
-  <div class="content">
-    <div class="header">
-      <div class="logo">
-        <img src="assets/images/ollivanders-logo.png">
-      </div>
-      <div class="text-header">
-        <span>About</span>
-        <span>Service</span>
-        <span>Contact</span>
-      </div>
-      <div class="topnav">
-        <input class="search" type="text" placeholder="Search..">
-      </div>
-    </div>
-    <div class="submenu">
-      <div class="nav-breadcrumb">
-        <ul class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Catalog</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="text-catalog">
-      <h2 class="catalog">Catalog</h2>
-    </div>
-    <div class="filter">
-      <div class="filterColor">
-        <input type="checkbox" name="1" value="Black" id="checkbox-id1" class="inputs" />
-        <label class="label-nav" for="checkbox-id1">Black</label>
-        <input type="checkbox" name="2" value="Yellow" id="checkbox-id2" class="inputs" />
-        <label class="label-nav" for="checkbox-id2">Yellow</label>
-        <input type="checkbox" name="3" value="White" id="checkbox-id3" class="inputs" />
-        <label class="label-nav" for="checkbox-id3">White</label>
-      </div>
-    </div>
-    <div class="main">
-      <div class="nav-bar">
-        <div class="nav-navbar">
-          <form class="choose">
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1">Acacia</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2">Cedar</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3">Dragon heartstring</label>
-          </form>
-        </div>
-        <div class="price">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slide">
-            <p class="small">0</p>
-            <p class="big">2000</p>
-          </div>
-        </div>
-      </div>
-      <div class="wall">
-        <div class="images-wands">
-            <img src="assets/images/01.jpg" alt="Walnut">
-            <h3>Walnut - Dragon <br> heartstring</h3>
-            <p><button class="but" disabled>BUY</button></p>
-        </div>
-        <div class="images-wands">
-          <img src="assets/images/01.jpg" alt="Walnut">
-          <h3>Walnut - <br> Dragon heartstring</h3>
-          <p><button class="but" disabled>BUY</button></p>
-        </div>
-        <div class="images-wands">
-          <img src="assets/images/01.jpg" alt="Walnut">
-          <h3>Walnut - <br> Dragon heartstring</h3>
-          <p><button class="but" disabled>BUY</button></p>
-        </div>
-        <div class="images-wands">
-          <img src="assets/images/01.jpg" alt="Walnut">
-          <h3>Walnut - <br> Dragon heartstring</h3>
-          <p><button class="but" disabled>BUY</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
+	<header>
+		<div class="logo">
+			<img class="logoimg" src="assets/images/ollivanders-logo.png" alt="logo" height="59" width="200">
+		</div>
+		<div class="head">
+			<ul>
+				<li><a href='#'>About</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><input type="search" placeholder="Search..." name="search"></li>
+			</ul>
+		</div>
+	</header>
+	<div class="item-2">
+		<div class="nav-breadcrumb">
+			<ul class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Catalog</a></li>
+			</ul>
+		  </div>
+	</div>
+	<div class="item-3">
+		<div class="sidemenu">
+			<aside class="filters-block">
+				<div class="filters">
+					<input type="checkbox" id="flower">
+					<label for="flower">Walnut</label>
+				</div>
+				<div class="filters">
+					<input type="checkbox" id="ood">
+					<label>Blackthorn</label>
+				</div>
+				<div class="filters">
+					<input type="checkbox" id="sweet">
+					<label for="sweet">Birch</label>
+				</div>
+				<div class="filters">
+					<div class="price"><label>Price</label></div>
+					<input type="range" id="range">
+					<p><span class="oneprice">1,500</span><span>20,000</span></p>
+				</div>
+			</aside>
+		</div>
+		<div class="mainblock">
+			<div class="item-card">
+				<div class="wands">
+					<a class="h-card" href="card.html">
+						<img src="assets/images/01.jpg" alt="Wanult"></a>
+					<h3>Walnut <br>- Dragon</h3>
+					<p class="price">1236</p>
+					<button class="buy">buy</button>
+				</div>
+			</div>
+			<div class="item-card">
+				<div class="wands">
+					<a class="h-card" href="card.html">
+						<img src="assets/images/04.jpg" alt="Holly"></a>
+					<h3>Holly - <br>Phoenix feather</h3>
+					<p class="price">5700</p>
+					<button class="buy">buy</button>
+				</div>
+			</div>
+			<div class="item-card">
+				<div class="wands">
+					<a class="h-card" href="card.html">
+						<img src="assets/images/02.png" alt="Blackthorn"></a>
+					<h3>Blackthorn - <br> Troll whisker</h3>
+					<p class="price">9450</p>
+					<button class="buy">buy</button>
+				</div>
+			</div>
+			<div class="item-card">
+				<div class="wands">
+					<a class="h-card" href="card.html">
+						<img src="assets/images/03.jpg" alt="Birch"></a>
+					<h3>Birch - <br> Heartstring</h3>
+					<p class="price">3900</p>
+					<button class="buy">buy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pagination">
+		<p class="page">page:
+			<span class="firstpage">1</span>
+			<span>2</span>
+			<span class="etc">...</span>
+		</p>
+	</div>
+	<footer>
+		<p>Ollivanders shop&#169;</p>
+	</footer>
 </body>
 
 </html>
-
-
-
-            <!-- <img src="assets/images/02.png" alt="Blackthorn"> -->
-            <!-- <h3>Blackthorn - Troll whisker</h3>
-            <p><button class="but" disabled>BUY</button></p>
-            <img src="assets/images/03.jpg" alt="Birch">
-            <h3>Birch - Dragon heartstring</h3>
-            <p><button class="but" disabled>BUY</button></p>
-            <img src="assets/images/04.jpg" alt="Holly">
-            <h3>Holly - Phoenix feather</h3>
-            <p><button class="but" disabled>BUY</button></p> -->
