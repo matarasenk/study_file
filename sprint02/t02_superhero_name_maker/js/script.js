@@ -10,7 +10,7 @@ if (!inputName || inputName.lenght > 20)
 else {
     let gender = prompt("Is the superhero male or female? Leave blank if unknown or other");
     let age = prompt("How old is the superhero?")
-    if (!age || age.length > 5)
+    if (!age || age.length > 5 || age == 0)
         alert("Wrong input");
     else
         allResult(inputName, gender, age);
