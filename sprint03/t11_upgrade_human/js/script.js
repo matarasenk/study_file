@@ -22,7 +22,7 @@ class Human {
     document.querySelector("img").src = "assets/images/sleep.gif";
     setTimeout(() => {
       if (!this.superhero) {
-        document.querySelector("img").src = "assets/images/human.gif";
+        document.querySelector("img").src = "https://media1.giphy.com/media/LmNwrBhejkK9EFP504/200.gif";
       } else if (human.calories > 500 && this.superhero) {
         document.querySelector("img").src = "assets/images/super_man.gif";
         document.querySelector("#fly").classList.add("show");
@@ -55,10 +55,10 @@ class Human {
         setTimeout(() => {
           if (human.calories < 500 && !this.superhero) {
             nomNomNom.classList.remove("show");
-            document.querySelector("img").src = "assets/images/human.gif";
+            document.querySelector("img").src = "https://media1.giphy.com/media/LmNwrBhejkK9EFP504/200.gif";
           } else if (human.calories > 500 && !this.superhero) {
             nomNomNom.classList.remove("show");
-            document.querySelector("img").src = "assets/images/human.gif";
+            document.querySelector("img").src = "https://media1.giphy.com/media/LmNwrBhejkK9EFP504/200.gif";
           } else if (human.calories > 500 && this.superhero) {
             nomNomNom.classList.remove("show");
             document.querySelector("img").src = "assets/images/super_man.gif";
@@ -87,7 +87,7 @@ class Human {
   }
   humanDead() {
     clearInterval(this.idLife);
-    document.querySelector("img").src = "assets/images/dead.gif";
+    document.querySelector("img").src = "https://external-preview.redd.it/0bgVnu2j6hZ-QpYAAjeCp2L-y_BqIRAqX2Vytuw4qjM.jpg?auto=webp&s=6d116041be8f42bc1e345995968cfa4b6ccc6cbc";
     document.querySelector("#feed").classList.add("hide");
     document.querySelector("#sleep").classList.add("hide");
     document.querySelector("#turn").classList.add("hide");
@@ -131,11 +131,11 @@ class Superhero extends Human {
 }
 
 let human = new Human(
-  "assets/images/human.gif",
-  "Vasilii",
-  "Haker",
+  "https://media1.giphy.com/media/LmNwrBhejkK9EFP504/200.gif",
+  "Yarik",
+  "Hacker",
   "male",
-  35,
+  23,
   300
 );
 

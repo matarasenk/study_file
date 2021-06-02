@@ -1,26 +1,37 @@
-class HardWorker {
-  get age(){
-      return this.fuck;
-  }
-  set age(value) {
-      if(value >= 1 && value < 100){
-          this.fuck = value;
-      } 
-  }
-  get salary(){
-      return this._salary
-  }
-  set salary(value){
-      if(value >= 100 && value < 10000){
-          this._salary = value;
+class HardWorker  {
+
+    constructor() {
+      this.name;
+    }
+  
+    set age (age) {
+      if (age && age >= 1 && age < 100)
+      return this.testAge = age;
+    }
+  
+    get age () {
+      return this.testAge;
+    }
+  
+    set salary (salary) {
+      if (salary && salary >= 100 && salary < 10000) {
+        return this.testSalary = salary;
       }
-      
+    }
+  
+    get salary () {
+      return this.testSalary;
+    }
+  
+    toObject = () => {
+      return {
+        name: this.name,
+        age: this.age,
+        salary: this.salary
+      }
+    }
   }
-  toObject() {
-    return {name: this.name, age: this.age, salary: this.salary};
-    // return this
-  }
-}
+  
 
 
 export{HardWorker};
