@@ -7,7 +7,7 @@ body {
 .main-content {
   box-sizing: border-box;
   border: 1px solid black;
-  height: 600px;
+  height: 650px;
   width: 400px;
   margin: 0 auto;
 }
@@ -19,7 +19,49 @@ body {
 }
 
 .input {
-  border: 1px solid green;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
   width: 100%;
   height: 80%;
+  
+}
+
+.main {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.main td {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+
+}
+
+.buttons > td > input {
+  width: 100%;
+  height: 100%;
+  border: none; 
+  outline: none;
+  font-size: 1.5em;
+}
+
+.buttons > td > input:hover {
+  opacity: 0.8;  
+}
+
+.buttons > td > input:active {
+  opacity: 0.5;
+}
+
+.violet input {
+  background: rgb(179, 0, 179);
+}
+
+.red input {
+  background: rgb(255, 70, 70);
 }
