@@ -12,14 +12,15 @@
 <body>
   <div class="main-content">
     <div class="output">
-
+      <span class="operations"></span>
+      <span class="output-value">0</span>
     </div>
     <div class="input">
-      <table class="main">
+      <table class="main" onclick="action(event)">
         <tr class="buttons">
-          <td><input type="button" value="%"></td>
-          <td><input type="button" value="+/-"></td>
-          <td><input type="button" value="C"></td>
+          <td class="violet"><input type="button" value="%"></td>
+          <td class="violet"><input type="button" value="+/-"></td>
+          <td class="violet"><input type="button" value="C"></td>
           <td class="violet"><input type="button" value="/"></td>
         </tr>
         <tr class="buttons">
@@ -49,7 +50,7 @@
         <table>
     </div>
   </div>
-  <script src="scripts.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
