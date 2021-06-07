@@ -3,8 +3,7 @@ let outputValue = document.getElementsByClassName('output-value')[0];
 let operator = '';
 let numberValue = '';
 let resArray = [];
-let numberArr = [];
-let operatorsArr = [];
+let resultValue = 0;
 
 let action = (event) => {
   const val = event.target.value
@@ -14,8 +13,8 @@ let action = (event) => {
       resetVal();
     }
     else if (!+val && val !== '=' && val !== '.' && val !== '0') {
-      if (val === '+/-') {
-        numberValue *= -1
+      if (numberValue) {
+        operations.innerHTML += val
       }
       if (numberValue)
         resArray.push(numberValue);
@@ -24,24 +23,47 @@ let action = (event) => {
         numberValue = '';
       }
     } else if (val !== '=') {
+      operations.innerHTML += val
       numberValue += val;
     }
       else if (resArray[resArray.length - 1] !== numberValue) {
         resArray.push(numberValue)
       }
       if (val === '=') {
-        resArray.map((item) => {
-          if (+item) {
-            numberArr.push(+item)
+        for (let i = 0; i < resArray.length; i++) {
+          if (i === 0) {
+            resultValue = +resArray[i];
           }
-          else {
-            operatorsArr.push(item);
+          switch (resArray[i]) {
+            case '+': {
+              i++;
+              resultValue += +resArray[i];
+              break;
+            }
+            case '-': {
+              i++;
+              resultValue -= +resArray[i];
+              break;
+            }
+            case '*': {
+              i++;
+              resultValue *= +resArray[i];
+              break;
+            }
+            case '/': {
+              i++;
+              resultValue /= +resArray[i];
+              break;
+            }
+            case '%': {
+              i++;
+              resultValue %= +resArray[i];
+              break;
+            }
           }
-        })
-        resArray = [];
+        }
+        outputValue.innerHTML = resultValue;
       }
-
-    console.log(resArray);
   }
 }
 
@@ -49,6 +71,7 @@ let resetVal = () => {
   operator = '';
   numberValue = '';
   resArray = [];
+  resultValue = 0;
   operations.innerHTML = '';
   outputValue.innerHTML = '0'
 }
