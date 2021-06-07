@@ -15,10 +15,9 @@ let action = (event) => {
     else if (!+val && val !== '=' && val !== '.' && val !== '0') {
       if (numberValue) {
         operations.innerHTML += val
-      }
-      if (numberValue)
         resArray.push(numberValue);
-      if (!!+resArray[resArray.length - 1] && val !== '+/-' ) {
+      } 
+      if (+resArray[resArray.length - 1] && val !== '+/-' ) {
         resArray.push(val);
         numberValue = '';
       }
