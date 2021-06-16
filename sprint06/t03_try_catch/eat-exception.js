@@ -1,5 +1,9 @@
-module.exports.EatException = (product) => {
-    if(product.kcal > 200) {
-        throw new Error(`Too many calories in ${product.name} for ${this.type}`);
+class EatException extends Error {
+    constructor(message) {
+        // message = "No more junk food, dumpling";
+        super(message);
+        this.name = "";
     }
 }
+
+module.exports = EatException;
