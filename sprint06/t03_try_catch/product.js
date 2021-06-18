@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module.exports.Product = class {
     name;
     kcal;
@@ -50,3 +51,13 @@ module.exports.Product = class {
 //             `Throw ${productName} away!`)
 //     }
 // })
+=======
+class Product {
+    constructor(name, kcal_per_portion) {
+        this.name = name;
+        this.kcal_per_portion = kcal_per_portion;
+    }
+}
+
+module.exports = {Product};
+>>>>>>> 067efaf5b7fc1171f13f9c38cc8f54ae3fc1e117
